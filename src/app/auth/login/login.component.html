@@ -88,15 +88,17 @@
   header="Gimnasio Junasoft"
   [(visible)]="visible"
   [modal]="true"
-  [style]="{ width: '50vw' }"
+  [style]="{ width: '70vw' }"
   [draggable]="false"
   [resizable]="false"
 >
-  <div class="flex justify-between w-full">
-    <div class="flex flex-col gap-2 w-full">
+  <div class="flex w-full">
+    <div class="flex flex-col gap-2 w-full my-6">
       <div class="flex w-full justify-between items-center">
         <p class="text-lg font-bold">Nahuel Moyano</p>
-        <p class="bg-green-600 text-white font-bold px-6 py-2 rounded">
+        <p
+          class="bg-green-600 text-white font-bold px-6 py-2 rounded lg:flex md:flex sm:hidden"
+        >
           ESTÁS AL DíA
         </p>
       </div>
@@ -104,6 +106,14 @@
       <p>Plan: Musculación</p>
       <p>DNI: 12345678</p>
       <p>Fecha: 21/10/2024</p>
+
+      <div class="flex w-full items-center">
+        <p
+          class="bg-green-600 w-full text-white font-bold px-6 py-2 rounded lg:hidden md:hidden sm:block"
+        >
+          ESTÁS AL DíA
+        </p>
+      </div>
     </div>
   </div>
 </p-dialog>
